@@ -71,15 +71,33 @@ This project emphasizes:
 ## Screenshots
 
 ### Strategy generation
+
+The assistant translates your idea into a strategy specification. You don't need to write code—just review and refine the strategy through conversation. It handles everything from universe selection to signal construction.
+
+> *"Make me a strategy to invest in mid cap Canadian biotech stocks with second time founders."*
+
 ![Strategy generation](Screenshot%202026-03-06%20162015.png)
 
 ### Backtesting and evaluation
+
+Start by chatting with the AI assistant. Describe your trading idea in plain English. The assistant maps the idea to a concrete universe of assets and builds a strategy specification automatically.
+
+> *"Using a social graph of Donald Trump, his family, and known business associates, build a strategy that invests in companies that they currently run or are actively involved with."*
+
 ![Backtesting and evaluation](Screenshot%202026-03-06%20161825.png)
 
 ### Research workspace
+
+Dig into SEC filings, insider trading activity, congressional trades, and macroeconomic indicators—all surfaced alongside your charts in a unified workspace.
+
 ![Research workspace](Screenshot%202026-03-06%20163510.png)
 
 ### Advanced modeling pipeline
+
+Based on the results, you can refine your strategy. Try different parameters, add conditions, or explore entirely new approaches—including advanced methods like walk-forward validation with Hidden Markov Models and XGBoost ensembles.
+
+> *"Run a walkforward test that uses Engle-Granger and other statistical methods to choose pairs in-sample, then train a Hidden Markov Model with 4 states and 4 XGBoost models and use them in a Mixture of Experts to run a statistical arbitrage strategy."*
+
 ![Model pipeline](Screenshot%202026-03-06%20165723.png)
 
 ## Status
