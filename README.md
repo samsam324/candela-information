@@ -4,13 +4,13 @@ An AI-assisted platform for quantitative strategy research, backtesting, and ite
 
 ## Overview
 
-Candela is a project I built to reduce the friction between an investment idea and a testable quantitative strategy. The goal is to let a user describe a research hypothesis in natural language, translate it into a structured strategy specification, and evaluate it through a backtesting workflow backed by historical market data.
+Candela is a project I built to reduce the friction between an investment idea and a testable quantitative strategy. The goal is to let a user describe a research hypothesis in natural language, translate it into a structured strategy specification, and evaluate it through a backtesting workflow powered by historical market data.
 
-Rather than acting as a generic chatbot, the system is designed around a concrete research loop:
+Rather than functioning as a generic chatbot, the system is built around a concrete research loop:
 
 1. define a hypothesis
 2. map it to a tradable universe and signal logic
-3. run historical simulation
+3. run a historical simulation
 4. inspect results and diagnostics
 5. refine and retest
 
@@ -29,7 +29,7 @@ Rather than acting as a generic chatbot, the system is designed around a concret
   Supports refining strategies through repeated prompt-based edits and re-running tests.
 
 - **Advanced modeling workflows**  
-  Explores more complex pipelines such as walk-forward validation, regime detection, and model-driven statistical arbitrage.
+  Supports more complex pipelines such as walk-forward validation, regime detection, and model-driven statistical arbitrage.
 
 ## Example use cases
 
@@ -56,7 +56,7 @@ Candela is organized around four main components:
 
 ## Why I built it
 
-I wanted a faster way to go from raw market intuition to a reproducible research workflow. Most tools separate idea generation, data exploration, modeling, and backtesting into different systems. Candela is an attempt to unify those steps into a single interface.
+I wanted a faster way to go from raw market intuition to a reproducible research workflow. Most tools separate idea generation, data exploration, modeling, and backtesting into different systems. Candela is my attempt to unify those steps within a single interface.
 
 ## Tech focus
 
@@ -72,7 +72,7 @@ This project emphasizes:
 
 ### Strategy generation
 
-The assistant translates your idea into a strategy specification. You don't need to write code—just review and refine the strategy through conversation. It handles everything from universe selection to signal construction.
+The assistant translates your idea into a structured strategy specification. You do not need to write code. Instead, you can review and refine the strategy through conversation. It handles everything from universe selection to signal construction.
 
 > *"Make me a strategy to invest in mid cap Canadian biotech stocks with second time founders."*
 
@@ -80,7 +80,7 @@ The assistant translates your idea into a strategy specification. You don't need
 
 ### Backtesting and evaluation
 
-Start by chatting with the AI assistant. Describe your trading idea in plain English. The assistant maps the idea to a concrete universe of assets and builds a strategy specification automatically.
+Start by chatting with the AI assistant. Describe your trading idea in plain English. The assistant maps the idea to a concrete asset universe and automatically builds a strategy specification.
 
 > *"Using a social graph of Donald Trump, his family, and known business associates, build a strategy that invests in companies that they currently run or are actively involved with."*
 
@@ -88,13 +88,13 @@ Start by chatting with the AI assistant. Describe your trading idea in plain Eng
 
 ### Research workspace
 
-Dig into SEC filings, insider trading activity, congressional trades, and macroeconomic indicators—all surfaced alongside your charts in a unified workspace.
+Explore SEC filings, insider trading activity, congressional trades, and macroeconomic indicators, all surfaced alongside charts in a unified workspace.
 
 ![Research workspace](Screenshot%202026-03-06%20163510.png)
 
 ### Advanced modeling pipeline
 
-Based on the results, you can refine your strategy. Try different parameters, add conditions, or explore entirely new approaches—including advanced methods like walk-forward validation with Hidden Markov Models and XGBoost ensembles.
+Based on the results, you can refine your strategy by testing different parameters, adding new conditions, or exploring more advanced methods such as walk-forward validation with Hidden Markov Models and XGBoost ensembles.
 
 > *"Run a walkforward test that uses Engle-Granger and other statistical methods to choose pairs in-sample, then train a Hidden Markov Model with 4 states and 4 XGBoost models and use them in a Mixture of Experts to run a statistical arbitrage strategy."*
 
@@ -102,4 +102,4 @@ Based on the results, you can refine your strategy. Try different parameters, ad
 
 ## Status
 
-This repository represents an actively developed prototype / research platform. Some components are fully implemented, while others are being expanded as part of the broader system.
+This repository represents an actively developed prototype and research platform. Some components are fully implemented, while others are still being expanded as part of the broader system.
