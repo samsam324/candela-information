@@ -1,2 +1,87 @@
-# candela-information
-Overview of Candela Backtester
+# Candela
+
+An AI-assisted platform for quantitative strategy research, backtesting, and iterative model development.
+
+## Overview
+
+Candela is a project I built to reduce the friction between an investment idea and a testable quantitative strategy. The goal is to let a user describe a research hypothesis in natural language, translate it into a structured strategy specification, and evaluate it through a backtesting workflow backed by historical market data.
+
+Rather than acting as a generic chatbot, the system is designed around a concrete research loop:
+
+1. define a hypothesis
+2. map it to a tradable universe and signal logic
+3. run historical simulation
+4. inspect results and diagnostics
+5. refine and retest
+
+## What it does
+
+- **Natural-language strategy specification**  
+  Converts user prompts into structured strategy definitions, including universe selection, filters, signal logic, and test parameters.
+
+- **Backtesting workflow**  
+  Runs historical simulations and returns performance metrics, trade history, and equity curves.
+
+- **Research tooling**  
+  Surfaces supporting datasets and documents, including market data, filings, and strategy-related research inputs.
+
+- **Iterative experimentation**  
+  Supports refining strategies through repeated prompt-based edits and re-running tests.
+
+- **Advanced modeling workflows**  
+  Explores more complex pipelines such as walk-forward validation, regime detection, and model-driven statistical arbitrage.
+
+## Example use cases
+
+- Build and test a mid-cap Canadian biotech screen with founder-based filters
+- Prototype a pairs trading pipeline with in-sample pair selection and out-of-sample execution
+- Evaluate a regime-aware strategy using Hidden Markov Models and model ensembles
+- Combine research inputs such as filings, insider activity, and macro data into a unified testing workflow
+
+## System design
+
+Candela is organized around four main components:
+
+- **AI strategy layer**  
+  Interprets prompts and produces structured strategy specifications
+
+- **Research/data layer**  
+  Aggregates market and auxiliary research inputs used in strategy construction
+
+- **Backtesting engine**  
+  Simulates strategy execution on historical data and computes evaluation metrics
+
+- **User interface**  
+  Presents strategy definitions, charts, diagnostics, and supporting research in one workspace
+
+## Why I built it
+
+I wanted a faster way to go from raw market intuition to a reproducible research workflow. Most tools separate idea generation, data exploration, modeling, and backtesting into different systems. Candela is an attempt to unify those steps into a single interface.
+
+## Tech focus
+
+This project emphasizes:
+
+- strategy specification from natural language
+- structured research workflows
+- reproducible backtesting
+- walk-forward evaluation
+- integration of ML-driven and statistical strategies
+
+## Screenshots
+
+### Strategy generation
+![Strategy generation](Screenshot%202026-03-06%20162015.png)
+
+### Backtesting and evaluation
+![Backtesting and evaluation](Screenshot%202026-03-06%20161825.png)
+
+### Research workspace
+![Research workspace](Screenshot%202026-03-06%20163510.png)
+
+### Advanced modeling pipeline
+![Model pipeline](Screenshot%202026-03-06%20165723.png)
+
+## Status
+
+This repository represents an actively developed prototype / research platform. Some components are fully implemented, while others are being expanded as part of the broader system.
